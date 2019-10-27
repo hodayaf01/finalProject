@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="6fd9f846293149b3a3eea3668cbfb4d3" Name="Diagram1">
+        <EntityTypeShape EntityType="MediDBModel.ArchiveTakeMedicine" Width="1.5" PointX="6" PointY="4.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="MediDBModel.Guardian" Width="1.5" PointX="1.5" PointY="4.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="MediDBModel.guardiansToUser" Width="1.5" PointX="1.5" PointY="1.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="MediDBModel.HMO" Width="1.5" PointX="3.75" PointY="4.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="MediDBModel.KingOfDosage" Width="1.5" PointX="8.25" PointY="1.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="MediDBModel.Medicine" Width="1.5" PointX="8.25" PointY="3.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="MediDBModel.MedicinesToChild" Width="1.5" PointX="6.125" PointY="1.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="MediDBModel.TimeOfDay" Width="1.5" PointX="8.375" PointY="5.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="MediDBModel.User" Width="1.5" PointX="3.75" PointY="1.25" IsExpanded="true" />
+        <AssociationConnector Association="MediDBModel.fk_guardianId" ManuallyRouted="false" />
+        <AssociationConnector Association="MediDBModel.fk_userId" ManuallyRouted="false" />
+        <AssociationConnector Association="MediDBModel.fk_userHMO" ManuallyRouted="false" />
+        <AssociationConnector Association="MediDBModel.fk_KingOfDosage" ManuallyRouted="false" />
+        <AssociationConnector Association="MediDBModel.fk_medicineId" ManuallyRouted="false" />
+        <AssociationConnector Association="MediDBModel.fk_childId" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

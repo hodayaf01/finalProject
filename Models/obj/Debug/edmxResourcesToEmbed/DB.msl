@@ -1,0 +1,91 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="MediDBModelStoreContainer" CdmEntityContainer="MediDBEntitie">
+    <EntitySetMapping Name="ArchiveTakeMedicines">
+      <EntityTypeMapping TypeName="MediDBModel.ArchiveTakeMedicine">
+        <MappingFragment StoreEntitySet="ArchiveTakeMedicines">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="userId" ColumnName="userId" />
+          <ScalarProperty Name="medicineToChild" ColumnName="medicineToChild" />
+          <ScalarProperty Name="date" ColumnName="date" />
+          <ScalarProperty Name="time" ColumnName="time" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Guardians">
+      <EntityTypeMapping TypeName="MediDBModel.Guardian">
+        <MappingFragment StoreEntitySet="Guardian">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="guardianName" ColumnName="guardianName" />
+          <ScalarProperty Name="PhoneNumber" ColumnName="PhoneNumber" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="guardiansToUsers">
+      <EntityTypeMapping TypeName="MediDBModel.guardiansToUser">
+        <MappingFragment StoreEntitySet="guardiansToUser">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="userId" ColumnName="userId" />
+          <ScalarProperty Name="guardianId" ColumnName="guardianId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="HMOes">
+      <EntityTypeMapping TypeName="MediDBModel.HMO">
+        <MappingFragment StoreEntitySet="HMO">
+          <ScalarProperty Name="IdHMO" ColumnName="IdHMO" />
+          <ScalarProperty Name="nameHMO" ColumnName="nameHMO" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="KingOfDosages">
+      <EntityTypeMapping TypeName="MediDBModel.KingOfDosage">
+        <MappingFragment StoreEntitySet="KingOfDosage">
+          <ScalarProperty Name="kindOfDosageId" ColumnName="kindOfDosageId" />
+          <ScalarProperty Name="kindOfDosageName" ColumnName="kindOfDosageName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Medicines">
+      <EntityTypeMapping TypeName="MediDBModel.Medicine">
+        <MappingFragment StoreEntitySet="Medicines">
+          <ScalarProperty Name="medicineId" ColumnName="medicineId" />
+          <ScalarProperty Name="midicineName" ColumnName="midicineName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MedicinesToChilds">
+      <EntityTypeMapping TypeName="MediDBModel.MedicinesToChild">
+        <MappingFragment StoreEntitySet="MedicinesToChild">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="medicineId" ColumnName="medicineId" />
+          <ScalarProperty Name="childId" ColumnName="childId" />
+          <ScalarProperty Name="Dosage" ColumnName="Dosage" />
+          <ScalarProperty Name="kindOfDosage" ColumnName="kindOfDosage" />
+          <ScalarProperty Name="numCountADay" ColumnName="numCountADay" />
+          <ScalarProperty Name="timeOfDay" ColumnName="timeOfDay" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TimeOfDays">
+      <EntityTypeMapping TypeName="MediDBModel.TimeOfDay">
+        <MappingFragment StoreEntitySet="TimeOfDay">
+          <ScalarProperty Name="timeId" ColumnName="timeId" />
+          <ScalarProperty Name="timeName" ColumnName="timeName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Users">
+      <EntityTypeMapping TypeName="MediDBModel.User">
+        <MappingFragment StoreEntitySet="Users">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="usreId" ColumnName="usreId" />
+          <ScalarProperty Name="userName" ColumnName="userName" />
+          <ScalarProperty Name="email" ColumnName="email" />
+          <ScalarProperty Name="password" ColumnName="password" />
+          <ScalarProperty Name="userHMO" ColumnName="userHMO" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
